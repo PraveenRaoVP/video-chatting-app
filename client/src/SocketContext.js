@@ -17,6 +17,8 @@ const ContextProvider = ({ children }) => {
     const [callEnded, setCallEnded] = useState(false)
     const [name, setName] = useState('')
 
+    //contexts
+
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({ video: true, audio: true })
             .then((currentStream) => {
