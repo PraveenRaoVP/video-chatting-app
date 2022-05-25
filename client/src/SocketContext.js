@@ -4,7 +4,7 @@ import Peer from 'simple-peer'
 
 const SocketContext = createContext();
 
-const socket = io('https://git.heroku.com/hangout-homie-video-chat.git')
+const socket = io('https://hangout-homie-video-chat.herokuapp.com/')
 
 const ContextProvider = ({ children }) => {
     const [me, setMe] = useState('')
